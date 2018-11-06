@@ -1,1 +1,1 @@
-worker: node bot.js isabot
+worker: node bot.js IsaBot
