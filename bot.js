@@ -54,7 +54,7 @@ Client.on('message', (message) => {
 if(message.content == "Isabot, come say hi.") {
   message.channel.send("Oh, hi there! <:achai:508168466491113472> ");
   message.channel.send(" <:acjoy:508171068477800448> It's so nice to meet you. I'm Isabot. <:acisabot:508971326137040896>");
-  message.channel.send("I look forward to getting to know you! <:acsmile:508166327182163969>");
+  message.channel.send("I hope you enjoy your time with us! <:acsmile:508166327182163969>");
 }
 });
 Client.login(process.env.BOT_TOKEN);
