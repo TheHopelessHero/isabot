@@ -42,13 +42,19 @@ Client.on('message', (message) => {
   } else
   
     if(message.content == "Can someone help me?") {
-      message.send('U-um... O-<@506998203825258496>, Can you come here a second?! <:acisabot:508971326137040896> ');
+      message.channel.send('U-um... O- <@506998203825258496>, Can you come here a second?! <:acisabot:508971326137040896> ');
 }
-    if(message.content == "<@509241627903000576>") {
-      message.reply("H-hai! I'm <@509241627903000576>, how can I help you? <:acisabot:508971326137040896> ");
+    if(message.content == "Excuse me, Miss Isabot?") {
+      message.reply("Yes? <:acwtf:508172349221371906> Coming! I'm here! How can I help you? <:acisabot:508971326137040896> ");
 } else
     if(message.content == "Nothing, I just wanted to say hi.") {
-      message.reply("O-oh! :blush: I love today!");
+      message.reply("O-oh! <:acisabelle:508968543996608512>");
+      message.channel.send("I love today! <:achappy:508171962716258308> ");
 } 
+if(message.content == "Isabot, come say hi.") {
+  message.channel.send("Oh, hi there! <:achai:508168466491113472> ");
+  message.channel.send(" <:acjoy:508171068477800448> It's so nice to meet you. I'm Isabot. <:acisabot:508971326137040896>");
+  message.channel.send("I look forward to getting to know you! <:acsmile:508166327182163969>");
+}
 });
 Client.login(process.env.BOT_TOKEN);
