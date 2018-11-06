@@ -42,7 +42,13 @@ Client.on('message', (message) => {
   } else
   
     if(message.content == "Can someone help me?") {
-      message.reply('My friend <@506998203825258496> knows some things. Ask him!');
+      message.send('U-um... O-<@506998203825258496>, Can you come here a second?! <:acisabot:508971326137040896> ');
 }
+    if(message.content == "<@509241627903000576>") {
+      message.reply("H-hai! I'm <@509241627903000576>, how can I help you? <:acisabot:508971326137040896> ");
+} else
+    if(message.content == "Nothing, I just wanted to say hi.") {
+      message.reply("O-oh! :blush: I love today!");
+} 
 });
 Client.login(process.env.BOT_TOKEN);
